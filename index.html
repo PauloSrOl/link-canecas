@@ -73,11 +73,14 @@
             font-family:'jackboa', cursive;
             font-size: 50px;
             margin: 0;
+          
         }
         header a{
             font-size: 20px;
         }
-
+        header .logo-container{
+            margin: auto;
+        }
         .menu-icon {
             display: none;
             font-size: 2em;
@@ -92,7 +95,8 @@
         /* Seção principal (Hero) */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagem\ canecas/background.jpg') no-repeat center center/cover;
-            height: 70vw;
+            height: 50vw;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -152,7 +156,7 @@
         /* Seção de produtos */
         .gallery {
             padding: 50px 20px;
-            background-color: #fff;
+            background-color: white;
         }
 
         .gallery h2 {
@@ -188,10 +192,11 @@
         }
 
         .product-item p {
+            color: #f1f1f1;
             padding: 15px;
             font-size: 1.2em;
             text-align: center;
-            background-color: white;
+            background-color: red;
         }
 
         /* Seção de como funciona */
@@ -229,13 +234,21 @@
             color: var(--red-top);
         }
 
+         .final{
+            background-color: rgba(15, 1, 1, 0.973);
+            padding: 1px;
+        }
+
         /* Media queries para responsividade */
         @media (max-width: 768px) {
 
             .hero{
                 height: 90vh;
             }
-
+      
+            header .logo-container{
+                margin: auto;
+            }
             header h1 {
                 font-size: 1.8em;
             }
@@ -324,28 +337,28 @@
             <a href="https://www.instagram.com/sharestamp_personalizados/profilecard/?igsh=N256bjQ1bGk3eWh3" target="_blank">
                 <div class="product-item">
                     <img src="imagem canecas/caneca1.jpg" alt="Caneca 1">
-                    <p>Clique para ver mais</p>
+                    <p style="background-color:green;">Clique para ver mais</p>
                 </div>
             </a>
 
             <a href="https://wa.me/message/FXENKSLHSYTBB1" target="_blank">
                 <div class="product-item">
                     <img src="imagem canecas/caneca2.jpg" alt="Caneca 2">
-                    <p>Solicite um Orçamento</p>
+                    <p style="background-color:green;">Solicite um Orçamento</p>
                 </div>
             </a>
 
             <a href="https://www.instagram.com/sharestamp_personalizados/profilecard/?igsh=N256bjQ1bGk3eWh3" target="_blank">
                 <div class="product-item">
                     <img src="imagem canecas/variascanecas.jpg" alt="Caneca 3">
-                    <p>Clique para ver mais</p>
+                    <p style="background-color:green;">Clique para ver mais</p>
                 </div>
             </a>
 
             <a href="https://wa.me/message/FXENKSLHSYTBB1" target="_blank"> 
                     <div class="product-item">
                     <img src="imagem canecas/canecas3.jpeg" alt="Caneca 4">
-                    <p>Solicite um Orçamento</p>
+                    <p style="background-color:green;">Solicite um Orçamento</p>
                 </div>
             </a>
         </div>
@@ -363,11 +376,11 @@
         <p>© 2024 SartEstamp - Todos os direitos reservados.</p>
         <p>Siga-nos no <a href="https://www.instagram.com/sharestamp_personalizados/profilecard/?igsh=N256bjQ1bGk3eWh3" target="_blank">Instagram</a></p>
         <p>Contato: email@suempresa.com | (00) 1234-5678</p><br>
-        <p>Site criado por <a href="https://github.com/PauloSrOl" target="_blank">Soares Tech</a> para <a href="https://www.instagram.com/sharestamp_personalizados/profilecard/?igsh=N256bjQ1bGk3eWh3" target="_blank">StarEstamp</a></p>
+    
         
     </footer>
-    <footer>
-        
+    <footer class="final">
+        <p>Site criado por <a href="https://github.com/PauloSrOl" target="_blank">Soares Tech</a> para <a href="https://www.instagram.com/sharestamp_personalizados/profilecard/?igsh=N256bjQ1bGk3eWh3" target="_blank">StarEstamp</a></p>
     </footer>
 
     <script>
