@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    
 }
+body{
+    font-family: 'Montsserrat', sans-serif;
+    color: black;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Style Cabeçalho start */
+header{
+    background-color: #4caf50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Style Cabeçalho end */

@@ -9,6 +9,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
         /* Estilos globais */
+
+        :root{
+            --red:#68231b;
+            --black:#121214;
+            --brown:#2c1408;
+            --red-top:#641216;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -29,9 +36,9 @@
 
         /* Estilos do cabeçalho */
         header {
-            background-color: #4CAF50;
+            background-color: var(--red-top);
             padding: 20px;
-            color: white;
+            color: rgb(255, 255, 255);
             text-align: center;
             position: sticky;
             top: 0;
@@ -59,7 +66,7 @@
 
         /* Seção principal (Hero) */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagem\ canecas/pexels-ioanamtc-19149201.jpg') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagem\ canecas/background.jpg') no-repeat center center/cover;
             height: 90vh;
             display: flex;
             flex-direction: column;
@@ -82,7 +89,7 @@
         }
 
         .hero .cta-button {
-            background-color: #ff5722;
+            background-color: var(--red-top);
             padding: 15px 30px;
             border-radius: 50px;
             font-size: 1.2em;
@@ -91,7 +98,7 @@
         }
 
         .hero .cta-button:hover {
-            background-color: #e64a19;
+            background-color: rgba(167, 1, 1, 0.973);
         }
 
         /* Animações */
@@ -163,7 +170,7 @@
 
         /* Seção de como funciona */
         .how-it-works {
-            background-color: #4CAF50;
+            background-color: var(--red);
             color: white;
             padding: 60px 20px;
             text-align: center;
@@ -192,7 +199,7 @@
         }
 
         footer a {
-            color: #4CAF50;
+            color: var(--red-top);
         }
 
         /* Media queries para responsividade */
@@ -250,7 +257,7 @@
 <body>
     <!-- Cabeçalho com menu hamburguer -->
     <header>
-        <h1>Sua Empresa</h1>
+        <h1>SharEstamp</h1>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <nav id="menu">
             <a href="#comprar">Produtos</a>
@@ -261,7 +268,7 @@
 
     <!-- Seção principal (Hero) -->
     <section class="hero">
-        <h2>Crie Canecas Incríveis com Seu Estilo!</h2>
+        <h2>Crie Conexões Atrvés de Prosutos Personalizados!</h2>
         <p>Transforme suas ideias em produtos únicos</p>
         <a href="#comprar" class="cta-button">Compre Agora</a>
     </section>
@@ -271,19 +278,19 @@
         <h2>Nossos Produtos</h2>
         <div class="product-grid">
             <div class="product-item">
-                <img src="imagem canecas/caneca-flork-escolhas-f2146f6d9044f3b7cd16978194210318-1024-1024.jpg" alt="Caneca 1">
+                <img src="imagem canecas/caneca1.jpg" alt="Caneca 1">
                 <p>Caneca Personalizada 1</p>
             </div>
             <div class="product-item">
-                <img src="imagem canecas/f99e5faf-33e2-4506-abd6-4c589ace910b-4b52522c77aedaac1d16507182336137-1024-1024.jpeg" alt="Caneca 2">
+                <img src="imagem canecas/caneca2.jpg" alt="Caneca 2">
                 <p>Caneca Personalizada 2</p>
             </div>
             <div class="product-item">
-                <img src="imagem canecas/pexels-brett-sayles-3493047.jpg" alt="Caneca 3">
+                <img src="imagem canecas/variascanecas.jpg" alt="Caneca 3">
                 <p>Caneca Personalizada 3</p>
             </div>
             <div class="product-item">
-                <img src="imagem canecas/pexels-ioanamtc-19149201.jpg" alt="Caneca 4">
+                <img src="imagem canecas/canecas3.jpeg" alt="Caneca 4">
                 <p>Caneca Personalizada 4</p>
             </div>
         </div>
